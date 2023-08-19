@@ -4,10 +4,10 @@ public class Book {
     private int id;
     private String name;
     private String author;
-    private String price;
+    private int price;
 
 
-    public Book(int id, String name, String author, String price) {
+    public Book(int id, String name, String author, int price) {
         this.id = id;
         this.name = name;
         this.author = author;
@@ -39,7 +39,7 @@ public class Book {
         return author;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
@@ -47,16 +47,20 @@ public class Book {
         this.author = author;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public String showIdName(){
+    public String showIdAndName(){
         return "ID: " + id + " Name: " + name;
     }
 
-    public String showAuthorPrice(){
+    public String showAuthorAndPrice(){
         return "Author: " + author + " Price: " + price;
+    }
+
+    public String showPriceInEURO() {
+        return "Price: " + price/42 + " EURO";
     }
 
     @Override
