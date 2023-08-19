@@ -9,17 +9,14 @@ public class Lamp {
     public void switchOff(){
         state = false;
     }
-    public Object isLight(){
-        if (state == true){
-            return 0;
-        }
-        return null;
+    public boolean isLight(){
+        return state;
     }
     public void showLampState(){
-        if(state == false && state == true){
-            System.out.println("Lamp is not working");
-        }else {
+        if(state == true){
             System.out.println("Lamp is working");
+        }else {
+            System.out.println("Lamp is not working");
         }
     }
 }
