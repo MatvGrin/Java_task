@@ -13,7 +13,7 @@ public class Lamp {
         return state;
     }
     public void showLampState(){
-        if(state == true){
+        if(state){
             System.out.println("Lamp is working");
         }else {
             System.out.println("Lamp is not working");
