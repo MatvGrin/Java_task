@@ -1,21 +1,24 @@
-package Light;
+package light;
 
 public class Lamp {
     private boolean state = false;
 
-    public void switchOn(){
+    public void switchOn() {
         state = true;
     }
-    public void switchOff(){
+
+    public void switchOff() {
         state = false;
     }
-    public boolean isLight(){
+
+    public boolean isLight() {
         return state;
     }
-    public void showLampState(){
-        if(state){
+
+    public void showLampState() {
+        if (state) {
             System.out.println("Lamp is working");
-        }else {
+        } else {
             System.out.println("Lamp is not working");
         }
     }
