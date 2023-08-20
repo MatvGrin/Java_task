@@ -1,9 +1,9 @@
-package Shop;
+package shop;
 
 public class Product {
     private int id;
     private String name;
-    private String producingCountry;
+    private String country;
     private int cost;
     private int quantity;
 
@@ -11,7 +11,7 @@ public class Product {
     public Product(int id, String name, String producingCountry, int cost, int quantity) {
         this.id = id;
         this.name = name;
-        this.producingCountry = producingCountry;
+        this.country = producingCountry;
         this.cost = cost;
         this.quantity = quantity;
     }
@@ -36,12 +36,12 @@ public class Product {
         this.name = name;
     }
 
-    public String getProducingCountry() {
-        return producingCountry;
+    public String getCountry() {
+        return country;
     }
 
-    public void setProducingCountry(String producingCountry) {
-        this.producingCountry = producingCountry;
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public int getCost() {
@@ -70,7 +70,7 @@ public class Product {
         return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", producingCountry='" + producingCountry + '\'' +
+                ", producingCountry='" + country + '\'' +
                 ", cost=" + cost +
                 ", quantity=" + quantity +
                 '}';

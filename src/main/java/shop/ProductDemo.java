@@ -1,4 +1,4 @@
-package Shop;
+package shop;
 
 public class ProductDemo {
     public static void main(String[] args) {
@@ -7,12 +7,12 @@ public class ProductDemo {
 
         product2.setId(91);
         product2.setName("Milk");
-        product2.setProducingCountry("Ukraine");
+        product2.setCountry("Ukraine");
         product2.setCost(46);
         product2.setQuantity(1259);
         System.out.println("Id: " + product2.getId());
         System.out.println("Name: " + product2.getName());
-        System.out.println("Producing country: " + product2.getProducingCountry());
+        System.out.println("Producing country: " + product2.getCountry());
         System.out.println("Cost: " + product2.getCost());
         System.out.println("Quantity: " + product2.getQuantity());
 
