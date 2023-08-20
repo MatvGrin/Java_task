@@ -4,7 +4,7 @@ public class Product {
     private int id;
     private String name;
     private String country;
-    private int cost;
+    private int price;
     private int quantity;
 
 
@@ -12,7 +12,7 @@ public class Product {
         this.id = id;
         this.name = name;
         this.country = producingCountry;
-        this.cost = cost;
+        this.price = cost;
         this.quantity = quantity;
     }
 
@@ -44,12 +44,12 @@ public class Product {
         this.country = country;
     }
 
-    public int getCost() {
-        return cost;
+    public int getPrice() {
+        return price;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
+    public void setPrice(int price) {
+        this.price = price;
     }
 
     public int getQuantity() {
@@ -61,7 +61,7 @@ public class Product {
     }
 
     public String totalPrice(){
-        return "Total price: " + (cost * quantity);
+        return "Total price: " + (price * quantity);
     }
 
 
@@ -71,7 +71,7 @@ public class Product {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", producingCountry='" + country + '\'' +
-                ", cost=" + cost +
+                ", cost=" + price +
                 ", quantity=" + quantity +
                 '}';
     }
