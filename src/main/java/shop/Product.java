@@ -60,8 +60,8 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public String totalPrice(){
-        return "Total price: " + (price * quantity);
+    public int totalPrice(){
+        return price * quantity;
     }
 
 
