@@ -8,6 +8,7 @@ public class QuadraticEquation {
     private double a;
     private double b;
     private double c;
+    private final double discriminant = b*b - 4*a*c;
 
     public QuadraticEquation(double a, double b, double c) {
         this.a = a;
@@ -29,12 +30,10 @@ public class QuadraticEquation {
 
 
     public double calculateDiscriminant(){
-        double discriminant = b*b - 4*a*c;
         return discriminant;
     }
 
-    public Object getEquationRoots(){
-        double discriminant = b*b - 4*a*c;
+    public Object getEquationRoots(){;
         if (discriminant > 0){
             double x1 = (-b + sqrt(discriminant)) / (2*a);
             double x2 =(-b - sqrt(discriminant)) / (2*a);
