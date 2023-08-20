@@ -6,9 +6,17 @@ public class ProductService {
 
     private Product[] products;
 
-    public ProductService(Product[] products) {
-        this.products = products;
+    {
+        Product product1 = new Product(1,"Salt","China",865,8);
+        Product product2 = new Product(2,"Milk","Ukraine",46,1259);
+        Product product3 = new Product(3,"Apple","Ukraine",21,1000);
+        Product product4 = new Product(4,"telefone","Russia",4200,34);
+        products = new Product[]{product1, product2, product3, product4};
     }
+
+//    public ProductService(Product[] products) {
+//        this.products = products;
+//    }
 
     public void showAllProducts(){
         for (Product product : products) {
