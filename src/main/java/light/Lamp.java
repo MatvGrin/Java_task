@@ -1,4 +1,4 @@
-package Light;
+package light;
 
 public class Lamp {
     private boolean state = false;
