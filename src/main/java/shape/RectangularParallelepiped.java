@@ -1,9 +1,9 @@
 package shape;
 
 public class RectangularParallelepiped {
-    private int a;
-    private int b;
-    private int h;
+    private final int a;
+    private final int b;
+    private final int h;
 
 
     public RectangularParallelepiped(int a, int b, int c) {
@@ -12,21 +12,18 @@ public class RectangularParallelepiped {
         this.h = c;
     }
 
-    public RectangularParallelepiped() {
-    }
-
     public int calculateVolume() {
-        int V = a * b * h;
-        return V;
+        int volume = a * b * h;
+        return volume;
     }
 
     public int calculateSquare() {
-        int S = 2 * (a * b + a * h + b * h);
-        return S;
+        int square = 2 * (a * b + a * h + b * h);
+        return square;
     }
 
     public int calculateSquareSide() {
-        int S_b = 2 * h + (a + b);
-        return S_b;
+        int sideSquare = h * 2 * (a + b);
+        return sideSquare;
     }
 }
