@@ -23,7 +23,7 @@ public class RectangularParallelepiped {
     }
 
     public int calculateSquareSide() {
-        int sideSquare = 2 * h + (a + b);
+        int sideSquare = h * 2 * (a + b);
         return sideSquare;
     }
 }

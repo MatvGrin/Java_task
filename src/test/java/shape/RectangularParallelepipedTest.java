@@ -25,6 +25,6 @@ public class RectangularParallelepipedTest {
     public void calculateSquareSide() {
         ctoron = new RectangularParallelepiped(3,2,2);
         int res = ctoron.calculateSquareSide();
-        assertEquals(9, res);
+        assertEquals(20, res);
     }
 }
