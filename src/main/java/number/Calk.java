@@ -62,13 +62,15 @@ public class Calk {
 
     public void primeNumbers(){
         System.out.print("Prime numbers: ");
-        for (int j : array) {
-            for(int i = 1; i < j / 2; i++) {
-                if(j % i == 0) {
-                    System.out.println("");
-                }
+        for (int num : array) {
+            int counter = 0;
+            if (num > 2 && num % 2 == 0) continue;
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) counter++;
             }
-            System.out.print(j + " ");
+            if (counter == 0) {
+                System.out.print(num + " ");
+            }
         }
     }
 
@@ -86,7 +88,16 @@ public class Calk {
     }
 
     public void isPalindrome(){
+        for (int values : array) { // 43234
+            int temp = values; // 43234
+            int rez = 0;
+            while (temp > 0) { // 0
+                int dig = temp % 10; // 4
+                rez = rez * 10 + dig; // 43234
+                temp /= 10;
+            }
 
+        }
     }
 
     public void shortestAndLongestNumber(){
