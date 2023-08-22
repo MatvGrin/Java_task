@@ -7,7 +7,7 @@ public class UserCommunicator {
     private static final Scanner scanner = new Scanner(System.in);
     public void run(){
         while (true) {
-        System.out.print("Input quantity number: ");
+        System.out.print("\nInput quantity number: ");
         int kapasiti = scanner.nextInt();
         int[] numbers = new int[kapasiti];
 
@@ -28,7 +28,7 @@ public class UserCommunicator {
         System.out.println("ascendingAndDescendingLong -> 9");
         System.out.println("Out -> 10");
 
-            System.out.print("\nInput number metod: ");
+            System.out.print("Input number metod: ");
             int metod = scanner.nextInt();
 
             switch (metod) {
