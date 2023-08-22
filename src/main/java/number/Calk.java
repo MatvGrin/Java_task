@@ -60,7 +60,7 @@ public class Calk {
         }
     }
 
-    public void primeNumbers(){
+    public void primeNumbers(){////
         System.out.print("Prime numbers: ");
         for (int num : array) {
             int counter = 0;
@@ -88,15 +88,18 @@ public class Calk {
     }
 
     public void isPalindrome(){
-        for (int values : array) { // 43234
-            int temp = values; // 43234
+        System.out.println("Palindrome: ");
+        for (int values : array) {
+            int temp = values;
             int rez = 0;
-            while (temp > 0) { // 0
-                int dig = temp % 10; // 4
-                rez = rez * 10 + dig; // 43234
+            while (temp > 0) {
+                int dig = temp % 10;
+                rez = rez * 10 + dig;
                 temp /= 10;
             }
-
+            if (values == rez){
+                System.out.println(values + " ");
+            }
         }
     }
 
