@@ -25,52 +25,57 @@ public class UserCommunicator {
         System.out.println("isPalindrome -> 7");
         System.out.println("shortestAndLongestNumber -> 8");
         System.out.println("ascendingAndDescendingLong -> 9");
+        System.out.println("Out -> 10");
 
-        System.out.print("Input number metod: " );
-        int metod = scanner.nextInt();
+        while (true) {
+            System.out.print("Input number metod: ");
+            int metod = scanner.nextInt();
 
-        switch (metod){
-            case 1: {
-                calk.evenAndOdd();
-                break;
+            switch (metod) {
+                case 1: {
+                    calk.evenAndOdd();
+                    break;
+                }
+                case 2: {
+                    calk.biggestAndSmallest();
+                    break;
+                }
+                case 3: {
+                    calk.divisibleBy3Or9();
+                    break;
+                }
+                case 4: {
+                    calk.threeDigit();
+                    break;
+                }
+                case 5: {
+                    calk.primeNumbers();
+                    break;
+                }
+                case 6: {
+                    calk.ascendingAndDescendingOrder();
+                    break;
+                }
+                case 7: {
+                    calk.isPalindrome();
+                    break;
+                }
+                case 8: {
+                    calk.shortestAndLongestNumber();
+                    break;
+                }
+                case 9: {
+                    calk.ascendingAndDescendingLong();
+                    break;
+                }
+                default: {
+                    System.out.println("Error");
+                }
             }
-            case 2: {
-                calk.biggestAndSmallest();
+            if (metod == 10){
                 break;
-            }
-            case 3: {
-                calk.divisibleBy3Or9();
-                break;
-            }
-            case 4: {
-                calk.threeDigit();
-                break;
-            }
-            case 5: {
-                calk.primeNumbers();
-                break;
-            }
-            case 6: {
-                calk.ascendingAndDescendingOrder();
-                break;
-            }
-//            case 7: {
-//                calk.isPalindrome();
-//                break;
-//            }
-            case 8: {
-                calk.shortestAndLongestNumber();
-                break;
-            }
-            case 9: {
-                calk.ascendingAndDescendingLong();
-                break;
-            }
-            default:{
-                System.out.println("Error");
             }
         }
-
 
     }
 }

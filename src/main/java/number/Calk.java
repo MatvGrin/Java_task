@@ -85,15 +85,15 @@ public class Calk {
         System.out.println(Arrays.toString(reversesorted));
     }
 
-    private void isPalindrome(){
+    public void isPalindrome(){
 
     }
 
-    private void shortestAndLongestNumber(){
-        
+    public void shortestAndLongestNumber(){
+
     }
 
-    private void ascendingAndDescendingLong(){
+    public void ascendingAndDescendingLong(){
 
     }
 }
