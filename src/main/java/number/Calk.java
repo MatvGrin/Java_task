@@ -103,8 +103,34 @@ public class Calk {
         }
     }
 
-    public void shortestAndLongestNumber(){
+    public void shortestAndLongestNumber(){ // 123   3695     25   9
+        int sh = numberLength(array[0]);  // 3
+        int lo = numberLength(array[0]);   // 3
+        int shNum = array[0];         // 123
+        int loNum = array[0];         // 123
+        for (int i = 1; i < array.length; i++) {
+            int len = numberLength(array[i]); // 4
+            if (len > lo) {
+                lo = len;
+                loNum = array[i];
+            }
+            if (len < lo) {
+                sh = len;
+                shNum = array[i];
+            }
+        }
+        System.out.println("Shortest number: " + shNum + " length: " + sh);
+        System.out.println("Longest number: " + loNum + " length: " + lo);
 
+    }
+
+    private int numberLength(int number) {
+        int length = 0;
+        while (number > 0) {
+            number /= 10;
+            length++;
+        }
+        return length;
     }
 
     public void ascendingAndDescendingLong(){
