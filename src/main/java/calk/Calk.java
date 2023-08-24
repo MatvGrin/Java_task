@@ -1,7 +1,6 @@
-package number;
+package calk;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.stream.IntStream;
 
 public class Calk {
@@ -88,7 +87,7 @@ public class Calk {
     }
 
     public void isPalindrome(){
-        System.out.println("Palindrome: ");
+        System.out.println("Palindrome is: ");
         for (int values : array) {
             int temp = values;
             int rez = 0;
