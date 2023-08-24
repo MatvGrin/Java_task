@@ -12,6 +12,7 @@ public class CustomerService {
     }
 
     public void showAllCustomers() {  // по алфавіту виповнити!!
+        Arrays.sort(customers);
         for (Customer customer : customers) {
             System.out.println(customer);
         }
@@ -44,7 +45,7 @@ public class CustomerService {
 
     public Customer findCustomerByAddress(Address address) {
         for (Customer customer : customers) {
-            if (customer.getAddress() == address) {
+            if (Objects.equals(customer.getAddress(), address)) {
                 return customer;
             }
         }

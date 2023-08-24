@@ -1,6 +1,6 @@
 package clothes;
 
-public class Customer {
+public class Customer implements Comparable<Customer> {
     //Створити класс Customer: id, name, surname, address (адреса),
     // credit card number(номер кредитної картимарка), account number (номер банківського рахунку).
 
@@ -79,5 +79,10 @@ public class Customer {
                 ", creditCardNumber=" + creditCardNumber +
                 ", accountNumber=" + accountNumber +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Customer o) {
+        return this.surname.compareToIgnoreCase(o.surname);
     }
 }

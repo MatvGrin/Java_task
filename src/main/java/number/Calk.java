@@ -133,7 +133,8 @@ public class Calk {
         return length;
     }
 
-    public void ascendingAndDescendingLong(){
+    public void ascendingAndDescendingLong(){ //1234  9789  8521  85  99999
+                                              // 85  1234  9789 8521  99999
 
     }
 }

@@ -7,8 +7,6 @@ public class CustomerDemo {
         Address address3 = new Address(95632,"Paris","Sandjmen",18);
         Address address4 = new Address(15328,"Amsterdam","Pikaso",26);
 
-        Address[] addresses = {address1,address2,address3,address4};
-
         Customer customer1 = new Customer(1,"Piter","Volker", address1, 4825,59);
         Customer customer2 = new Customer(2,"Lex","Alker", address2, 8965,98);
         Customer customer3 = new Customer(3,"Mark","Diper", address3, 2952,2);
@@ -19,11 +17,16 @@ public class CustomerDemo {
         CustomerService service = new CustomerService(customers);
 
         service.showAllCustomers();
+        System.out.println("--------------------------------------");
         service.showCustomersByCity("Paris");
+        System.out.println("--------------------------------------");
         service.showCustomersByCreditCard(3000, 6000);
+        System.out.println("--------------------------------------");
 
         System.out.println(service.findCustomerById(3));
+        System.out.println("--------------------------------------");
         System.out.println(service.findCustomerByAddress(address4));
+        System.out.println("--------------------------------------");
         System.out.println(service.findCustomerByAccount(98));
 
 
