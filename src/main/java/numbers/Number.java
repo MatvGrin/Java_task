@@ -99,4 +99,70 @@ public class Number {
         }
     }
 
+    private boolean growth(int num){
+        int[] arr = new int[numberLength(num)];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = num % 10;
+            num /= 10;
+        }
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] < arr[i + 1]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void numbersInWhichAreInStrictAscendingOrder(){
+        System.out.print("Numbers in which are in strict ascending order: ");
+        int counter = 0;
+        for (int i : array) {
+            if (growth(i)) {
+                counter++;
+                if (counter == 2){
+                    System.out.print(i);
+                } else if(counter == 1) System.out.print(i);
+            }
+        }
+    }
+
+    public void moreThanItsRightHandNeighbor(){
+        System.out.print("More than its right-hand neighbor: ");
+        int counter = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] > array[i + 1]){
+                counter++;
+                System.out.print(array[i] + " ");
+            }
+        }
+        System.out.print("\nQuantity: " + counter);
+    }
+
+    public void positiveAndNegativeNumbers(){
+        System.out.print("Positive and negative numbers: ");
+        int temp = 0;
+        int temp1 = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] % 2 == 0 && array[i + 1] % 2 == 1){
+                temp++;
+            }else System.out.println(temp);
+        }
+        System.out.println(temp1);
+    }
+
+    public void theProductOfAllOneDigitAndTwoDigitNumberSandTheSumOfAllOthers(){
+        System.out.print("The product of all one digit and two digit number sand the sum of all others: ");
+        int temp1 = 1;
+        int temp2 = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] >= 1 && array[i] <= 99){
+                temp1 *= array[i];
+            }
+            if (array[i] >= 100){
+                temp2 += array[i];
+            }
+        }
+        System.out.print("Multiplication: " + temp1);
+        System.out.print("Summa: " + temp2);
+    }
 }

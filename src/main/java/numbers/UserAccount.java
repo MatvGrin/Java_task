@@ -20,7 +20,11 @@ public class UserAccount {
             System.out.println("diffNumbers -> 2");
             System.out.println("isPalindrome -> 3");
             System.out.println("allNumbersAreEven -> 4");
-            System.out.println("get out -> 5");
+            System.out.println("numbersInWhichAreInStrictAscendingOrder -> 5");
+            System.out.println("moreThanItsRightHandNeighbor -> 6");
+            System.out.println("positiveAndNegativeNumbers -> 7");
+            System.out.println("theProductOfAllOneDigitAndTwoDigitNumberSandTheSumOfAllOthers -> 8");
+            System.out.println("get out -> 9");
 
             System.out.print("Input number metod: ");
             int metod = scanner.nextInt();
@@ -42,11 +46,27 @@ public class UserAccount {
                     number.allNumbersAreEven();
                     break;
                 }
+                case 5: {
+                    number.numbersInWhichAreInStrictAscendingOrder();
+                    break;
+                }
+                case 6: {
+                    number.moreThanItsRightHandNeighbor();
+                    break;
+                }
+                case 7: {
+                    number.positiveAndNegativeNumbers();
+                    break;
+                }
+                case 8: {
+                    number.theProductOfAllOneDigitAndTwoDigitNumberSandTheSumOfAllOthers();
+                    break;
+                }
                 default: {
                     System.out.println("Error");
                 }
             }
-            if (metod == 5){
+            if (metod == 9){
                 break;
             }
 
