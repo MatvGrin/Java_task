@@ -141,13 +141,14 @@ public class Number {
     public void positiveAndNegativeNumbers(){
         System.out.print("Positive and negative numbers: ");
         int temp = 0;
-        int temp1 = 0;
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] % 2 == 0 && array[i + 1] % 2 == 1){
                 temp++;
-            }else System.out.println(temp);
+            }else {
+                temp = 0;
+            }
         }
-        System.out.println(temp1);
+        System.out.println(temp);
     }
 
     public void theProductOfAllOneDigitAndTwoDigitNumberSandTheSumOfAllOthers(){
