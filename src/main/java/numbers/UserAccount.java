@@ -55,7 +55,7 @@ public class UserAccount {
                     break;
                 }
                 case 7: {
-                    number.positiveAndNegativeNumbers();
+                    System.out.println(number.positiveAndNegativeNumbers());
                     break;
                 }
                 case 8: {

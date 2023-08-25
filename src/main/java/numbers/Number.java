@@ -138,19 +138,19 @@ public class Number {
         System.out.print("\nQuantity: " + counter);
     }
 
-    public void positiveAndNegativeNumbers(){
+    public int positiveAndNegativeNumbers(){
         System.out.print("Positive and negative numbers: ");
-        int temp = 0;
-        int flag = 0;
-        for (int i = 0; i < array.length - 1; i++) {
-            if ((array[i] > 0 && array[i + 1] < 0) || (array[i] < 0 && array[i + 1] > 0)){
-                flag++;
-            }else {
-                System.out.print(flag);
+        boolean flag = array[0] > 0;
+        for (int i = 0; i < array.length; i++) {
+            if (flag) {
+                if (array[i] < 0) return i;
+                flag = false;
+            } else {
+                if (array[i] > 0) return i;
+                flag = true;
             }
-            temp = 0;
         }
-        System.out.println(temp);
+        return 0;
     }
 
     public void theProductOfAllOneDigitAndTwoDigitNumberSandTheSumOfAllOthers(){
