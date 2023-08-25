@@ -141,12 +141,14 @@ public class Number {
     public void positiveAndNegativeNumbers(){
         System.out.print("Positive and negative numbers: ");
         int temp = 0;
+        int flag = 0;
         for (int i = 0; i < array.length - 1; i++) {
-            if (array[i] % 2 == 0 && array[i + 1] % 2 == 1 || array[i] % 2 == 1 && array[i + 1] % 2 == 0){
-                temp++;
+            if ((array[i] > 0 && array[i + 1] < 0) || (array[i] < 0 && array[i + 1] > 0)){
+                flag++;
             }else {
-                temp = 0;
+                System.out.print(flag);
             }
+            temp = 0;
         }
         System.out.println(temp);
     }
