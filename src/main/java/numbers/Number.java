@@ -142,7 +142,7 @@ public class Number {
         System.out.print("Positive and negative numbers: ");
         int temp = 0;
         for (int i = 0; i < array.length - 1; i++) {
-            if (array[i] % 2 == 0 && array[i + 1] % 2 == 1){
+            if (array[i] % 2 == 0 && array[i + 1] % 2 == 1 || array[i] % 2 == 1 && array[i + 1] % 2 == 0){
                 temp++;
             }else {
                 temp = 0;
