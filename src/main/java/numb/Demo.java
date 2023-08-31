@@ -2,8 +2,8 @@ package numb;
 
 public class Demo {
     public static void main(String[] args) {
-        int[] arr = {9,2,5,6,8,7,1,4,6,9,3,2,0,5,8};
+        int[] arr = {1,2,3,4,5,4,6,4};
         Number number = new Number(arr);
-        number.minimalElementAmongAllElements();
+        number.theMinimumOfTheLocalMaxima();
     }
 }

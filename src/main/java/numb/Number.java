@@ -67,7 +67,13 @@ public class Number {
     }
 
     public void theMinimumOfTheLocalMaxima(){
-        int min = array[1];
+        int min = -1;
+        for (int i = 1; i < array.length - 1; i++) {
+            if (array[i] > array[i-1] && array[i] > array[i+1]){
+                min = array[i];
+                break;
+            }
+        }
         for (int i = 1; i < array.length - 1; i++) {
             if (array[i] > array[i-1] && array[i] > array[i+1]){
                 if (min > array[i]){
