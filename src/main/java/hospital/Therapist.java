@@ -1,6 +1,6 @@
 package hospital;
 
-public class Therapist {
+public class Therapist extends People{
     //Створити класс Therapist: id, name, surname, address (адреса), speciality (спеціальність).
 
     private int id;
@@ -11,10 +11,7 @@ public class Therapist {
 
 
     public Therapist(int id, String name, String surname, Address address, String speciality) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.address = address;
+        super(id, name, surname, address);
         this.speciality = speciality;
     }
 

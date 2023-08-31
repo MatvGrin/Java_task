@@ -2,7 +2,7 @@ package hospital;
 
 import java.time.LocalDate;
 
-public class Patient {
+public class Patient extends People{
     //: id, name, surname, address (адреса), medical card number (номер медичної карти), diagnosis (діагноз),
     //last visit date (дата останнього візиту)(використовувати класс LocalDate), therapist (лікуючий лікар).
     private int id;
@@ -16,10 +16,7 @@ public class Patient {
 
 
     public Patient(int id, String name, String surname, Address address, int medicalCardNumber, Diagnosis diagnosis, LocalDate lastVisitDate, Therapist therapist) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.address = address;
+        super(id, name, surname, address);
         this.medicalCardNumber = medicalCardNumber;
         this.diagnosis = diagnosis;
         this.lastVisitDate = lastVisitDate;
