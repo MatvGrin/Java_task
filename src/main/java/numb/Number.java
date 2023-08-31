@@ -22,10 +22,9 @@ public class Number {
     }
 
     public int elementsOfArithmeticProgression(){
-        int d = 0;
-        for (int i = 0; i < array.length - 1; i++) {
-            d = array[1] - array[0];
-            if (array[i]+d != array[i+1]){
+        int d = array[1] - array[0];
+        for (int i = 1; i < array.length - 1; i++) {
+            if (array[i+1] - array[i] != d){
                 return 0;
             }
         }
@@ -33,9 +32,8 @@ public class Number {
     }
 
     public int elementsOfGeometricProgression(){
-        int b = 0;
+        int b = array[1] / array[0];
         for (int i = 0; i < array.length-1; i++) {
-            b = array[1] / array[0];
             if (array[i]*b != array[i+1]){
                 return 0;
             }
@@ -60,7 +58,7 @@ public class Number {
 
     public void minimalElementAmongAllElements(){
         int min = array[1];
-        for (int i = 0; i < array.length; i+=2) {
+        for (int i = 3; i < array.length; i+=2) {
             if (min > array[i]){
                 min = array[i];
             }
