@@ -19,7 +19,7 @@ public class UserAccount {
             System.out.println("startAndEnd -> 1");
             System.out.println("elementsOfArithmeticProgression -> 2");
             System.out.println("elementsOfGeometricProgression -> 3");
-            System.out.println("positiveAndNegativeNumbers -> 4");
+            System.out.println("evenAndOddNumbers -> 4");
             System.out.println("minimalElementAmongAllElements -> 5");
             System.out.println("theMinimumOfTheLocalMaxima -> 6");
             System.out.println("get out -> 10");
@@ -41,7 +41,7 @@ public class UserAccount {
                     break;
                 }
                 case 4: {
-                    System.out.println(number.positiveAndNegativeNumbers());
+                    System.out.println(number.evenAndOddNumbers());
                     break;
                 }
                 case 5: {

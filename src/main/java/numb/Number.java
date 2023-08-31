@@ -41,15 +41,14 @@ public class Number {
         return b;
     }
 
-    public int positiveAndNegativeNumbers(){
-        System.out.print("Positive and negative numbers: ");
+    public int evenAndOddNumbers(){
         boolean temp = array[0] > 0;
         for (int i = 0; i < array.length; i++) {
             if (temp) {
-                if (array[i] < 0) return i;
+                if (array[i] % 2 != 0) return i;
                 temp = false;
             } else {
-                if (array[i] > 0) return i;
+                if (array[i] % 2 != 1) return i;
                 temp = true;
             }
         }
