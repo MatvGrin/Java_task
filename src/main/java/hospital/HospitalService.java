@@ -21,7 +21,7 @@ public class HospitalService {
 
     public void showPatientsByCity(String city){
         for (Patient patient : patients) {
-            if (Objects.equals(patient.getAddress().getCityName(), city)){
+            if (Objects.equals(patient.getAddress().getCityName().toUpperCase(), city.toUpperCase())){
                 System.out.println(patient);
             }
         }
