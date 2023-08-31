@@ -36,7 +36,7 @@ public class Number {
         int b = 0;
         for (int i = 0; i < array.length-1; i++) {
             b = array[1] / array[0];
-            if (array[i]*3 != array[i+1]){
+            if (array[i]*b != array[i+1]){
                 return 0;
             }
         }
@@ -59,7 +59,13 @@ public class Number {
     }
 
     public void minimalElementAmongAllElements(){
-
+        int min = array[1];
+        for (int i = 0; i < array.length; i+=2) {
+            if (min > array[i]){
+                min = array[i];
+            }
+        }
+        System.out.println(min);
     }
 
     public void theMinimumOfTheLocalMaxima(){
