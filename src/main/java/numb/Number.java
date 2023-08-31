@@ -10,15 +10,19 @@ public class Number {
 
     public void startAndEnd(int start, int end){
         int temp = 0;
-        int len = 0;
-        for (int i : array) {
-            if (i >= start && i <= end){
-                temp += i;
-                len++;
+        int leg = 0;
+        if (start > 0 && end > 0 && end > start){
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] > array[start] && array[end] > array[i]){
+                    temp += array[i];
+                    leg++;
+                }
             }
+            int rez = temp / leg;
+            System.out.println(rez);
+        }else {
+            System.out.println("Error");
         }
-        int rez = temp / len;
-        System.out.println(rez);
     }
 
     public int elementsOfArithmeticProgression(){
@@ -42,7 +46,7 @@ public class Number {
     }
 
     public int evenAndOddNumbers(){
-        boolean temp = array[0] > 0;
+        boolean temp = array[0] % 2 == 0;
         for (int i = 0; i < array.length; i++) {
             if (temp) {
                 if (array[i] % 2 != 0) return i;
