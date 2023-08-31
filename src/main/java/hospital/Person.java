@@ -1,6 +1,6 @@
 package hospital;
 
-public class Person {
+public class Person implements Comparable<Person>{
     private int id;
     private String name;
     private String surname;
@@ -54,5 +54,10 @@ public class Person {
                 ", surname='" + surname + '\'' +
                 ", address=" + address +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return name.compareTo(o.name);
     }
 }
