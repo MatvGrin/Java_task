@@ -2,13 +2,9 @@ package hospital;
 
 import java.time.LocalDate;
 
-public class Patient extends People{
+public class Patient extends Person {
     //: id, name, surname, address (адреса), medical card number (номер медичної карти), diagnosis (діагноз),
     //last visit date (дата останнього візиту)(використовувати класс LocalDate), therapist (лікуючий лікар).
-    private int id;
-    private String name;
-    private String surname;
-    private Address address;//-----------
     private int medicalCardNumber;
     private Diagnosis diagnosis;//---------------
     private LocalDate lastVisitDate;
@@ -23,37 +19,6 @@ public class Patient extends People{
         this.therapist = therapist;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
 
     public int getMedicalCardNumber() {
         return medicalCardNumber;
@@ -86,19 +51,4 @@ public class Patient extends People{
     public void setTherapist(Therapist therapist) {
         this.therapist = therapist;
     }
-
-    @Override
-    public String toString() {
-        return "Patient{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", address=" + address +
-                ", medicalCardNumber=" + medicalCardNumber +
-                ", diagnosis=" + diagnosis +
-                ", lastVisitDate=" + lastVisitDate +
-                ", therapist=" + therapist +
-                '}';
-    }
-
 }
