@@ -1,7 +1,7 @@
 package automobile;
 
 public class Car {
-//Створити класс Car: id, brand (марка), model (Модель), year (рік випуску), color (колір), price (вартість).
+//Створити класс test.Car: id, brand (марка), model (Модель), year (рік випуску), color (колір), price (вартість).
 //Визначити конструкори, геттери, сеттери, toString.
     private int id;
     private String brand;
@@ -70,7 +70,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "test.Car{" +
                 "id=" + id +
                 ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +

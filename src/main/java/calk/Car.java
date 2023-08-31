@@ -5,7 +5,7 @@ public class Car {
     private Kuzov kuzov;
     private Koleso koleso;
 
-//    public Car() {
+//    public test.Car() {
 //        this.kuzov = new Kuzov();
 //        this.koleso = new Koleso();
 //    }

@@ -11,8 +11,8 @@ public class CarService {
 //- показати лист автомобілів які експлуатуються більше years років        void showCarsByExplTerm(int years);+++++
 //- показати лист автомобілів заданого кольору      void showCarsByColor(String color)++++++++++++++
 //- показати лист автомобілів заданого року випуску, вартість яких менше указаної  void showCarsByYearAndMaxPrice(int years, int maxPrice);++++++
-//- знайти авто по id         Car findCarById(int id);+++++++++++
-//- знайти авто по марці, моделі та році випуску      Car findCarByBrandAndModelAndYear(String brand, String model, int year);++++++
+//- знайти авто по id         test.Car findCarById(int id);+++++++++++
+//- знайти авто по марці, моделі та році випуску      test.Car findCarByBrandAndModelAndYear(String brand, String model, int year);++++++
 
     private Car[] cars;
 
